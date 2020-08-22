@@ -1,0 +1,7 @@
+.navbar .navbar-brand{
+    color: #c8102e;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #272727;
+    text-transform: capitalize;
+}
