@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Title } from "../../Elements/Headings.styled";
 import './Navigation.css';
 
 function Navigation() {
@@ -8,7 +9,7 @@ function Navigation() {
     <header>
       <nav className={"navbar navbar-expand-lg navbar-light bg-transparent"}>
         <Link className={"navbar-brand"} to="/">
-          CodeWithNazam
+          <Title>CodeWithNazam</Title>
         </Link>
         <button
           className={"navbar-toggler"}
