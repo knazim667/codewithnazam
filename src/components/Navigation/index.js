@@ -1,15 +1,15 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import './Navigation.css';
 
 function Navigation() {
   return (
     // Header Start
     <header>
-      {/* Navbar  */}
       <nav className={"navbar navbar-expand-lg navbar-light bg-transparent"}>
-        <a className={"navbar-brand"} href="#">
+        <Link className={"navbar-brand"} to="/">
           CodeWithNazam
-        </a>
+        </Link>
         <button
           className={"navbar-toggler"}
           type="button"
@@ -25,29 +25,29 @@ function Navigation() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <a className={"nav-link"} href="#">
+              <NavLink className={"nav-link"} to="/courses">
                 courses <span className="sr-only">(current)</span>
-              </a>
+              </NavLink>
             </li>
             <li className={"nav-item"}>
-              <a className={"nav-link"} href="#">
+              <NavLink className={"nav-link"} to="/blogs">
                 blogs
-              </a>
+              </NavLink>
             </li>
             <li className={"nav-item"}>
-              <a className={"nav-link"} href="#">
+              <NavLink className={"nav-link"} to="/about">
                 about 
-              </a>
+              </NavLink>
             </li>
             <li className={"nav-item"}>
-              <a className={"nav-link"} href="#">
+              <NavLink className={"nav-link"} to="/login">
                 login
-              </a>
+              </NavLink>
             </li>
             <li className={"nav-item"}>
-              <a className={"nav-link"} href="#">
+              <NavLink className={"nav-link"} to="/register">
                 sign up
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
