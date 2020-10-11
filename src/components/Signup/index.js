@@ -1,24 +1,49 @@
-import React from "react";
+import React , {useState} from "react";
+import { Component } from "react";
 import { CardWraper } from "../../Elements/CardWrapper/CardWrapper.styled";
 import { Input } from "../../Elements/Input/Input.styled";
 
-function Register() {
+class Register extends Component {
+  constructor(props){
+    super(props);
+    this.state ={
+
+
+        userName : '',
+        email : '',
+        password : ''
+   
+   }
+  }
+
+  handleChange =( e) =>{
+    
+    
+    this.setState({ ...this.state, [e.target.name] : e.target.value
+       })
+  }
+render(){
+
   return (
     <div>
       <CardWraper>
-        <form action="" method="post">
-          <Input type={"text"} defaultValue={"User Name"} id="" />
-          <Input type={"email"} defaultValue={"Email"} name="email" id="" />
+        <form>
+          <Input type={"text"} name="userName" value={this.state.userName} 
+          onChange={(e) => this.handleChange(e)}/>
+          <Input type={"email"}  value={this.state.email} name="email" onChange={(e)=>this.handleChange(e)}/>
           <Input
             type={"password"}
-            defaultValue={"Password"}
             name="password"
             id=""
+            value={this.state.password}
+            onChange={(e)=>this.handleChange(e)}
           />
           <Input type={"submit"} value="Register" />
         </form>
       </CardWraper>
     </div>
   );
+}
+  
 }
 export default Register;
