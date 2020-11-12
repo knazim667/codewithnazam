@@ -10,6 +10,7 @@ word-wrap : break-word;
 background-clip : border-box;
 border : 1px solid rgba(0,0,0,0.125);
 border-radius : 3px;
-width : ${props => props.width || '20rem'}
+width : ${props => props.width || '20rem'};
+padding : 0;
 
 `;

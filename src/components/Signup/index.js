@@ -17,8 +17,6 @@ class Register extends Component {
   }
 
   handleChange =( e) =>{
-    
-    
     this.setState({ ...this.state, [e.target.name] : e.target.value
        })
   }
@@ -27,7 +25,7 @@ render(){
   return (
     <div>
       <CardWraper>
-        <form>
+        <form style={{margin : '10px auto'}}>
           <Input type={"text"} name="userName" value={this.state.userName} 
           onChange={(e) => this.handleChange(e)}/>
           <Input type={"email"}  value={this.state.email} name="email" onChange={(e)=>this.handleChange(e)}/>
