@@ -1,47 +1,35 @@
-import React , {useState} from "react";
-import { Component } from "react";
-import { CardWraper } from "../../Elements/CardWrapper/CardWrapper.styled";
-import { Input } from "../../Elements/Input/Input.styled";
+import React from "react";
+import Form from "../Form/Form";
 
-class Register extends Component {
-  constructor(props){
-    super(props);
-    this.state ={
+class Register extends Form {
+  state = {
+    data: {
+      username: "",
+      email: "",
+      password: "",
+    },
+  };
 
-
-        userName : '',
-        email : '',
-        password : ''
-   
-   }
+  doSubmit() {
+    console.log("submit");
   }
-
-  handleChange =( e) =>{
-    this.setState({ ...this.state, [e.target.name] : e.target.value
-       })
+  render() {
+    return (
+      <React.Fragment>
+        <div className="container py-5">
+          <div className="row justify-content-center">
+            <div className="col-md-5 border p-5">
+              <form onSubmit={this.handleSubmit}>
+                {this.renderInput("username", "Username")}
+                {this.renderInput("email", "Email")}
+                {this.renderInput("password", "Password", "password")}
+                {this.renderButton("Register")}
+              </form>
+            </div>
+          </div>
+        </div>
+      </React.Fragment>
+    );
   }
-render(){
-
-  return (
-    <div>
-      <CardWraper>
-        <form style={{margin : '10px auto'}}>
-          <Input type={"text"} name="userName" value={this.state.userName} 
-          onChange={(e) => this.handleChange(e)}/>
-          <Input type={"email"}  value={this.state.email} name="email" onChange={(e)=>this.handleChange(e)}/>
-          <Input
-            type={"password"}
-            name="password"
-            id=""
-            value={this.state.password}
-            onChange={(e)=>this.handleChange(e)}
-          />
-          <Input type={"submit"} value="Register" />
-        </form>
-      </CardWraper>
-    </div>
-  );
-}
-  
 }
 export default Register;

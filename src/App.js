@@ -12,10 +12,6 @@ function App() {
     <Router>
       <React.Fragment>
         <Navigation />
-        <Title size={"3em"}>Hello World Starting Bloging</Title>
-        <div className="container">
-          <Card />
-        </div>
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
       </React.Fragment>
