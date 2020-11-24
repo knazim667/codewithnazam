@@ -1,19 +1,32 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import { Title } from "../../Elements/Headings.styled";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { MENU_ITEMS } from "../../data";
+import Logo from "../../Elements/Logo";
 import "./Navigation.css";
 
 function Navigation() {
+  const [mobileMenu, setMobileMenu] = useState(false);
+
+  let collapse = "";
+
+  if (mobileMenu) {
+    collapse = "collapse navbar-collapse show";
+  } else {
+    collapse = "collapse navbar-collapse";
+  }
+
   return (
     // Header Start
     <header className="border">
-      <div className="container">
+      <div className="container-xl">
         <nav className={"navbar navbar-expand-lg navbar-light bg-transparent"}>
-          <Link className={"navbar-brand"} to="/">
-            <Title>CodeWithNazam</Title>
-          </Link>
+          <NavLink className={"navbar-brand"} to="/">
+            <Logo label="MN" />
+          </NavLink>
           <button
             className={"navbar-toggler"}
+            onClick={() => setMobileMenu(!mobileMenu)}
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -24,33 +37,15 @@ function Navigation() {
             <span className={"navbar-toggler-icon"}></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className={collapse} id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <NavLink className={"nav-link"} to="/courses">
-                  courses
-                </NavLink>
-              </li>
-              <li className={"nav-item"}>
-                <NavLink className={"nav-link"} to="/blogs">
-                  blogs
-                </NavLink>
-              </li>
-              <li className={"nav-item"}>
-                <NavLink className={"nav-link"} to="/about">
-                  about
-                </NavLink>
-              </li>
-              <li className={"nav-item"}>
-                <NavLink className={"nav-link"} to="/login">
-                  login
-                </NavLink>
-              </li>
-              <li className={"nav-item"}>
-                <NavLink className={"nav-link"} to="/register">
-                  sign up
-                </NavLink>
-              </li>
+              {MENU_ITEMS.map((item) => (
+                <li key={item.label} className="nav-item">
+                  <NavLink className={"nav-link"} to={item.path}>
+                    {item.label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         </nav>
