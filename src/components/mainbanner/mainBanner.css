@@ -1,0 +1,38 @@
+.main-banner {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.main-banner .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-banner .content .about-me {
+  width: 50%;
+  margin: auto;
+  color: #666;
+}
+.hello,
+.name,
+.designation {
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+}
+.main-banner .content .hello {
+  font-weight: 500;
+  font-size: 30px;
+  color: #666;
+}
+.main-banner .content .name {
+  font-weight: 800;
+  font-size: 80px;
+  color: #4169e1;
+}
+.main-banner .content .designation {
+  font-weight: 700;
+  font-size: 30px;
+  color: #666;
+}

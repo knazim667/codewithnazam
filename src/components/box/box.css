@@ -1,0 +1,35 @@
+.box-stats {
+  border: 1px solid #ddd;
+  padding: 20px 30px 25px 40px;
+  border-radius: 5px;
+}
+.box-stats.with-margin {
+  margin-bottom: 30px;
+}
+.box-stats h3 {
+  display: inline-block;
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+  color: #4169e1;
+}
+.box-stats h3::after {
+  content: "+";
+  position: absolute;
+  right: -24px;
+  font-size: 33px;
+  font-weight: 300;
+  top: 2px;
+}
+.box-stats p {
+  padding-left: 45px;
+}
+.box-stats p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 30px;
+  height: 1px;
+  background: #777;
+}
