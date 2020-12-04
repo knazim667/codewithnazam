@@ -12,6 +12,9 @@
   text-transform: uppercase;
   margin: 0;
 }
+.title-span {
+  color: #4169e1;
+}
 .title-bg {
   font-family: "Raleway", sans-serif;
   color: rgba(30, 37, 48, 0.07);

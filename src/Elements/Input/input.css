@@ -1,0 +1,27 @@
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  border: 1px solid #ddd;
+  width: 100%;
+  background: #252525;
+  background-color: #fff;
+  color: #666;
+  padding: 11px 26px;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  outline: none !important;
+  transition: 0.3s;
+}
+.contact-form textarea {
+  border: 1px solid #ddd;
+  background: #252525;
+  background-color: #fff;
+  color: #666;
+  width: 100%;
+  padding: 12px 26px;
+  margin-bottom: 20px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 30px;
+  outline: none !important;
+  transition: 0.3s;
+}

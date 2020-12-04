@@ -6,7 +6,7 @@ import { PORTFOLIO } from "../../data";
 const Portfolio = () => {
   return (
     <div>
-      <TitleSection title="my portfolio" titleBg="works" />
+      <TitleSection title="my" span="portfolio" titleBg="works" />
       <section className="portfolio-content">
         <div className="container grid-gallery">
           <section className="grid-wrap">
@@ -16,13 +16,7 @@ const Portfolio = () => {
                   <div className="item">
                     <div className="image">
                       <img src={item.img} alt="" />
-                      <div
-                        className="overlay"
-                        style={{
-                          left: 0,
-                          top: 0,
-                        }}
-                      >
+                      <div className="overlay">
                         <a href={item.path} className="view-work">
                           {item.linkText}
                         </a>

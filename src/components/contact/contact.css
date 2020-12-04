@@ -1,3 +1,24 @@
-.content-contact {
+.contact-content {
   padding-bottom: 85px;
+}
+.custom-title {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.custom-span-contact {
+  font-weight: 600;
+  padding-left: 50px;
+  line-height: 21px;
+  padding-top: 5px;
+}
+.custom-span-contact i {
+  left: 0;
+  top: 10px;
+  color: #4169e1;
+}
+.custom-span-contact span {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 400;
 }

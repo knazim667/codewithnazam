@@ -34,6 +34,7 @@
 .item:hover .overlay {
   display: flex;
   top: 0;
+  transition: all 400ms ease 1s;
 }
 .overlay {
   position: absolute;
@@ -47,6 +48,8 @@
   text-align: center;
   justify-content: center;
   background-color: #4169e1;
+  left: 0;
+  top: -100%;
   transition: all 300ms ease 0s;
   border-radius: 10px;
   max-height: 210px;
