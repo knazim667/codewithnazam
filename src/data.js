@@ -17,8 +17,8 @@ export const MENU_ITEMS = [
     offset: 0,
   },
   {
-    label: "WHY ME",
-    path: "#whyme_section",
+    label: "Blogs",
+    path: "#blogs",
     offset: 0,
   },
   {
@@ -27,7 +27,28 @@ export const MENU_ITEMS = [
     offset: 0,
   },
 ];
-
+export const FOOTER_ITEMS = [
+  {
+    label: "about me",
+    path: "#aboutme_section",
+    offset: 0,
+  },
+  {
+    label: "BLOG",
+    path: "/blogs",
+    offset: 0,
+  },
+  {
+    label: "GALLERY",
+    path: "#portfolio",
+    offset: 0,
+  },
+  {
+    label: "contact me",
+    path: "#contact_me",
+    offset: 0,
+  },
+];
 export const PERSONAL_INFO = [
   {
     label: "first name",

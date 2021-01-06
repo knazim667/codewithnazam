@@ -18,8 +18,8 @@ function Navigation() {
 
   return (
     // Header Start
-    <header className="border">
-      <div className="container-xl">
+    <header className="main-haider border fixed-top bg-white">
+      <div className="container-xl nav-wrapper">
         <nav className={"navbar navbar-expand-lg navbar-light bg-transparent"}>
           <NavLink className={"navbar-brand"} to="/">
             <Logo label="MN" />
