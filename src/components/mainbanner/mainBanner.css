@@ -18,21 +18,18 @@
 .hello,
 .name,
 .designation {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: capitalize;
 }
 .main-banner .content .hello {
   font-weight: 500;
   font-size: 30px;
-  color: #666;
 }
 .main-banner .content .name {
   font-weight: 800;
-  font-size: 80px;
-  color: #4169e1;
+  font-size: 90px;
 }
 .main-banner .content .designation {
   font-weight: 700;
   font-size: 30px;
-  color: #666;
 }

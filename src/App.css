@@ -1,0 +1,8 @@
+.toggle-theme {
+  position: fixed !important;
+  padding: 0 20px !important;
+  left: auto;
+  right: 20px;
+  top: auto;
+  bottom: 20px;
+}

@@ -6,6 +6,7 @@ const Input = ({ name, label, type, value, onChange, error, ...props }) => {
     <div>
       {label && <label htmlFor={name}>{label}</label>}
       <input
+        autoFocus
         type={type}
         name={name}
         id={name}

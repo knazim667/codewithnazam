@@ -1,11 +1,15 @@
 import React from "react";
+import { useContext } from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { MENU_ITEMS } from "../../data";
 import Logo from "../../Elements/Logo";
+import { ThemeContext } from "../context/themeContext";
 import "./Navigation.css";
 
 function Navigation() {
+  const { isLightTheme, light, dark } = useContext(ThemeContext);
+  const theme = isLightTheme ? light : dark;
   const [mobileMenu, setMobileMenu] = useState(false);
 
   let collapse = "";
@@ -18,7 +22,10 @@ function Navigation() {
 
   return (
     // Header Start
-    <header className="main-haider border fixed-top bg-white">
+    <header
+      className="main-haider fixed-top"
+      style={{ background: theme.bg, borderBottom: theme.bdr }}
+    >
       <div className="container-xl nav-wrapper">
         <nav className={"navbar navbar-expand-lg navbar-light bg-transparent"}>
           <NavLink className={"navbar-brand"} to="/">

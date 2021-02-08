@@ -1,24 +1,16 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import Navigation from "./components/Navigation";
 import "./App.css";
-import MainBanner from "./components/mainbanner";
-import AboutMe from "./components/aboutme";
-import Portfolio from "./components/portfolio";
-import Contact from "./components/contact";
 import Footer from "./components/Footer";
 import ThemeContextProvider from "./components/context/themeContext";
+import Layout from "./components/Layout/layout";
 
 function App() {
   return (
     <Fragment>
       <ThemeContextProvider>
         <Navigation />
-        <div className="">
-          <MainBanner />
-          <AboutMe />
-          <Portfolio />
-          <Contact />
-        </div>
+        <Layout />
         <Footer />
       </ThemeContextProvider>
     </Fragment>
