@@ -4,11 +4,12 @@ import { envelopeOpen } from "react-icons-kit/fa/envelopeOpen";
 import { phoneSquare } from "react-icons-kit/fa/phoneSquare";
 import Input from "../../Elements/Input/input";
 import TitleSection from "../../Elements/TitleSection";
+import PageWrapper from "../pageWrapper";
 import "./contact.css";
 
 const Contact = () => {
   return (
-    <div>
+    <PageWrapper>
       <TitleSection title="get in" span="touch" titleBg="contact" />
       <section className="contact-content">
         <div className="container">
@@ -79,7 +80,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </PageWrapper>
   );
 };
 

@@ -1,14 +1,10 @@
-.pagenotfound {
-  position: relative;
-  height: 90vh;
-}
-.pagenotfound .not-found {
+.not-found {
   font-size: 110px;
   color: rgb(255, 118, 14);
   text-align: center;
   font-weight: 800;
 }
-.pagenotfound .para {
+.para {
   text-align: center;
   font-size: 80px;
   color: #111;

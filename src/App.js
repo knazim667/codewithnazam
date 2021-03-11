@@ -8,6 +8,7 @@ import "./App.css";
 
 import Layout from "./components/Layout/layout";
 import PageNotfound from "./components/pages/404";
+import Contact from "./components/contact";
 
 function App() {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
@@ -19,6 +20,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Layout />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
           </Route>
           <Route path="*">
             <PageNotfound />

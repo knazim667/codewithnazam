@@ -101,7 +101,7 @@ export const MENU_ITEMS = [
   },
   {
     label: "LET'S TALK",
-    path: "#banner_section",
+    path: "/contact",
     offset: 0,
   },
 ];
