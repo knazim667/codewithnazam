@@ -6,7 +6,7 @@ import Contact from "../contact/index";
 
 const Layout = () => {
   return (
-    <div className="main">
+    <div>
       <MainBanner />
       <AboutMe />
       <Portfolio />

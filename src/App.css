@@ -1,3 +1,7 @@
+.main {
+  padding-bottom: 168px;
+}
+
 .toggle-theme {
   position: fixed !important;
   padding: 0 20px !important;
