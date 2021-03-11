@@ -17,7 +17,7 @@
 .navbar-light .navbar-nav .nav-item .nav-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  color: #666;
+  color: #111;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
   transition-property: border;
@@ -26,8 +26,8 @@
   transition-delay: 0s;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
-  color: #4169e1;
-  border-bottom-color: #4169e1;
+  color: #ff760e;
+  border-bottom-color: #ff760e;
   animation-name: item;
   animation-timing-function: linear;
 }

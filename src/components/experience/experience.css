@@ -27,7 +27,7 @@
   z-index: 1;
   border-radius: 50%;
   color: #fff;
-  background-color: #4169e1;
+  background-color: rgb(255, 118, 14);
 }
 .breifcase_icon {
   color: white;
@@ -46,6 +46,7 @@
 .resume-box h5 {
   font-size: 18px;
   margin: 7px 0 10px;
+  color: #111;
 }
 .resume-box .place {
   opacity: 0.8;

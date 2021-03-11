@@ -54,7 +54,7 @@
   text-transform: capitalize;
 }
 .seprator {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(114, 114, 114);
   margin: 70px auto 55px;
   max-width: 40%;
 }
@@ -69,11 +69,13 @@ figure {
   text-align: center;
   padding-bottom: 3rem;
   margin-bottom: 0;
+  color: #111;
 }
 .skills-heading {
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
+  color: #111;
 }
 *,
 ::after,

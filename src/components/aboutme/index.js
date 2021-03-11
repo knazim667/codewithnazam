@@ -89,8 +89,8 @@ const AboutMe = () => {
             {SKILLS.map((skill, index) => (
               <div key={index} className="col-6 col-md-3 mb-3 mb-sm-5">
                 <CircleProgressBar
-                  trailStrokeColor="#eee"
-                  strokeColor="#4169e1"
+                  trailStrokeColor="#ddd"
+                  strokeColor="rgb(255,118,14)"
                   percentage={skill.percentage}
                 />
                 <h6 className="skills-heading">{skill.label}</h6>

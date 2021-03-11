@@ -1,10 +1,6 @@
 import React, { useContext } from "react";
 import Button from "../../Elements/Button";
 import { ThemeContext } from "../context/themeContext";
-import man from "../../assets/images/banner-image/man.png";
-import code from "../../assets/images/banner-image/code.png";
-import carpet from "../../assets/images/banner-image/carpet.png";
-import bin from "../../assets/images/banner-image/bin.png";
 import "./mainBanner.css";
 import { mainBannerImages } from "../../data";
 
