@@ -14,7 +14,6 @@ const Layout = () => {
       <MainBanner />
       <AboutMe />
       <Portfolio />
-      <Contact />
       <ThemeToggle />
     </div>
   );

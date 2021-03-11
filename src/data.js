@@ -1,4 +1,82 @@
 import portfolio from "./assets/appModern/code.png";
+import man from "./assets/images/banner-image/man.png";
+import code from "./assets/images/banner-image/code.png";
+import carpet from "./assets/images/banner-image/carpet.png";
+import bin from "./assets/images/banner-image/bin.png";
+import book from "./assets/images/banner-image/book.png";
+import desktop from "./assets/images/banner-image/dekstop.png";
+import dot from "./assets/images/banner-image/dot.png";
+import flowertop from "./assets/images/banner-image/flower-top-big.png";
+import flower from "./assets/images/banner-image/flower-top.png";
+import headphone from "./assets/images/banner-image/headphone.png";
+import keyboard from "./assets/images/banner-image/keyboard.png";
+import mainpic from "./assets/images/banner-image/main-pic.png";
+import pen from "./assets/images/banner-image/pen.png";
+import table from "./assets/images/banner-image/table.png";
+import teacup from "./assets/images/banner-image/tea-cup.png";
+
+export const mainBannerImages = [
+  {
+    path: man,
+    alt: "man",
+  },
+  {
+    path: code,
+    alt: "code",
+  },
+  {
+    path: carpet,
+    alt: "carpet",
+  },
+  {
+    path: bin,
+    alt: "bin",
+  },
+  {
+    path: book,
+    alt: "book",
+  },
+  {
+    path: desktop,
+    alt: "desktop",
+  },
+  {
+    path: dot,
+    alt: "dot",
+  },
+  {
+    path: flowertop,
+    alt: "flowerTop",
+  },
+  {
+    path: flower,
+    alt: "flower",
+  },
+  {
+    path: keyboard,
+    alt: "keyboard",
+  },
+  {
+    path: pen,
+    alt: "pen",
+  },
+  {
+    path: table,
+    alt: "table",
+  },
+  {
+    path: teacup,
+    alt: "teacup",
+  },
+  {
+    path: headphone,
+    alt: "headphone",
+  },
+  {
+    path: mainpic,
+    alt: "mainpic",
+  },
+];
 
 export const MENU_ITEMS = [
   {
