@@ -3,11 +3,11 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import { ThemeContext } from "./components/context/themeContext";
 import ThemeToggle from "./components/context/themeToggle";
+import ComingSoon from "./components/pages/comingSoon";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import Layout from "./components/Layout/layout";
-import PageNotfound from "./components/pages/404";
 import Contact from "./components/contact";
 
 function App() {
@@ -21,11 +21,9 @@ function App() {
           <Route exact path="/">
             <Layout />
           </Route>
+          <Route exact path="/blogs" component={ComingSoon} />
           <Route exact path="/contact">
             <Contact />
-          </Route>
-          <Route path="*">
-            <PageNotfound />
           </Route>
         </Switch>
       </div>

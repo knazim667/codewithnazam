@@ -16,7 +16,7 @@
   letter-spacing: 0.5px;
 }
 .btn-about {
-  background-color: #4169e1;
+  background-color: rgb(255, 118, 14);
 }
 .btn-about:hover {
   color: white;

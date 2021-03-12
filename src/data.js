@@ -96,7 +96,7 @@ export const MENU_ITEMS = [
   },
   {
     label: "Blogs",
-    path: "#blogs",
+    path: "/blogs",
     offset: 0,
   },
   {
