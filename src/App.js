@@ -1,14 +1,12 @@
 import React, { Fragment, useContext } from "react";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import { ThemeContext } from "./components/context/themeContext";
-import ThemeToggle from "./components/context/themeToggle";
-import ComingSoon from "./components/pages/comingSoon";
-import { Switch, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
-
-import Layout from "./components/Layout/layout";
 import Contact from "./components/contact";
+import { ThemeContext } from "./components/context/themeContext";
+import Footer from "./components/Footer";
+import Layout from "./components/Layout/layout";
+import Navigation from "./components/Navigation";
+import ComingSoon from "./components/pages/comingSoon";
 
 function App() {
   const { isLightTheme, light, dark } = useContext(ThemeContext);

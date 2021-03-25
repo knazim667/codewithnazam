@@ -81,17 +81,17 @@ export const mainBannerImages = [
 export const MENU_ITEMS = [
   {
     label: "ME",
-    path: "#banner_section",
+    path: "/",
     offset: 0,
   },
   {
     label: "about me",
-    path: "#aboutme_section",
+    path: "/about",
     offset: 0,
   },
   {
     label: "PROJECTS",
-    path: "#project_section",
+    path: "/projects",
     offset: 0,
   },
   {
@@ -108,7 +108,7 @@ export const MENU_ITEMS = [
 export const FOOTER_ITEMS = [
   {
     label: "about me",
-    path: "#aboutme_section",
+    path: "/about",
     offset: 0,
   },
   {
@@ -118,12 +118,12 @@ export const FOOTER_ITEMS = [
   },
   {
     label: "GALLERY",
-    path: "#portfolio",
+    path: "/portfolio",
     offset: 0,
   },
   {
     label: "contact me",
-    path: "#contact_me",
+    path: "/contact",
     offset: 0,
   },
 ];
